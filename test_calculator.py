@@ -8,4 +8,4 @@ def test_single_number_returns_value():
     assert add("5") == 5
     
 def test_multiple_numbers_sum():
-    assert add("5, 3, 2") == 10
+    assert add("5, 3, 2, 4, 6") == 20
