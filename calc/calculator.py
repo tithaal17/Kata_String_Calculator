@@ -6,9 +6,15 @@ def add(numbers):
     delimiter="," 
   
     if numbers.startswith("//"):
-        Split =numbers.split("\n")   
-        delimiter= Split[0][2:] 
-        numbers=Split[1]
+        if numbers[2]=="[":
+            index=numbers.find("]")
+            delimiter=numbers[3:index]
+            Split =numbers.split("\n")
+            numbers=Split[1]
+        else:    
+            Split =numbers.split("\n")   
+            delimiter= Split[0][2:] 
+            numbers=Split[1]
         
     num= numbers.split(delimiter)
     negative =[]
