@@ -13,3 +13,6 @@ def test_multiple_numbers_sum():
 def test_handle_NewLine_delimiter_number_sum():
     assert add("5\n, 4, 6") == 15
     
+def test_custom_delimiter_semicolonDefault():
+     assert add("//;\n1;2") == 3
+    
