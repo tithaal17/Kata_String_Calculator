@@ -19,5 +19,5 @@ def test_custom_delimiter_semicolonDefault():
 def test_negative_numbers_not_allowed():
     with pytest.raises(Exception) as exc_info:
         add("1,-2,3,-4")
-    assert str(exc_info.value) == "Negatives not allowed: -2, -4"
+    assert str(exc_info.value) == "Negative numbers are not allowed: -2, -4"
     
