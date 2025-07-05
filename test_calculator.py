@@ -24,4 +24,5 @@ def test_negative_numbers_not_allowed():
 def test_numbers_greater_than_1000_is_ignored():
     assert add("1001,1002,3") == 3
 
-    
+def test_custom_delimiter_of_any_length():
+    assert add("//[***]\n1***2***3") == 6
