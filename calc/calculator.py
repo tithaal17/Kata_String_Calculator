@@ -17,6 +17,8 @@ def add(numbers):
         n= int(i)
         if n < 0 :
             negative.append(n)
+        elif n>1000:
+            continue
         total_sum+= n
     
     if negative:

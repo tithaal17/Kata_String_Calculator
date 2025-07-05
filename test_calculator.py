@@ -21,3 +21,7 @@ def test_negative_numbers_not_allowed():
         add("1,-2,3,-4")
     assert str(exc_info.value) == "Negative numbers are not allowed: -2, -4"
     
+def test_numbers_greater_than_1000_is_ignored():
+    assert add("1001,1002,3") == 3
+
+    
