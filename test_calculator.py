@@ -9,3 +9,7 @@ def test_single_number_returns_value():
     
 def test_multiple_numbers_sum():
     assert add("5, 3, 2, 4, 6") == 20
+    
+def test_handle_NewLine_delimiter_number_sum():
+    assert add("5\n, 4, 6") == 15
+    
